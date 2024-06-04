@@ -1,0 +1,73 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 3,
+   "id": "8afddf30",
+   "metadata": {},
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "[1] 0.06787818\n"
+     ]
+    }
+   ],
+   "source": [
+    "set.seed(100)\n",
+    "times = 1000000\n",
+    "size = 100\n",
+    "n = 0\n",
+    "for (i in 1:times) {\n",
+    "    songs <- sample(1:100, replace = F)\n",
+    "    if (songs[1] > 10 && songs[2] > 10 && songs[3] > 10 && songs[4] > 10 && songs[5] <= 10) {\n",
+    "        n <- n +1\n",
+    "    }\n",
+    "}\n",
+    "n / times"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "1b8baadb",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "a332a07f",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "aec2ac72",
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "R",
+   "language": "R",
+   "name": "ir"
+  },
+  "language_info": {
+   "codemirror_mode": "r",
+   "file_extension": ".r",
+   "mimetype": "text/x-r-source",
+   "name": "R",
+   "pygments_lexer": "r",
+   "version": "4.3.3"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
